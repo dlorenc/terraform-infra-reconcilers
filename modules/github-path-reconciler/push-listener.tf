@@ -35,7 +35,7 @@ module "push-listener" {
     }
   }
 
-  egress = "PRIVATE_RANGES_ONLY"
+  egress = "ALL_TRAFFIC"
 
   deletion_protection   = var.deletion_protection
   notification_channels = var.notification_channels
